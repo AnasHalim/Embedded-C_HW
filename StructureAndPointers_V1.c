@@ -6,6 +6,8 @@
 
 # include <stdio.h>
 # include <stdlib.h>
+# include <string.h>
+
 struct student
  {
 	 char name[10];
@@ -15,10 +17,15 @@ struct student
 
 int main()
 {
+	struct student anas;
+	strcpy(anas.name,"Anas");
+	anas.seatno = 10;
+
+	puts(anas.name);	
+	printf("%d\n",anas.seatno);
 	
 	
 	
 	
-	
-	return 0;
+	getchar();
 }
